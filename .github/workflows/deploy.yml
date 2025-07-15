@@ -1,0 +1,93 @@
+name: Deploy MusicDiscovery App to EC2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # Menggunakan 'npm ci' lebih cepat dan konsisten untuk CI/CD
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Archive project for deployment
+        # Menghapus file zip lama jika ada, lalu membuat yang baru
+        # Mengecualikan file yang tidak perlu di-deploy
+        run: |
+          rm -f app.zip
+          zip -r app.zip . -x ".git/*" "node_modules/*" ".github/*" ".env"
+
+      - name: Copy archive to EC2
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: 22
+          source: "app.zip"
+          # Target adalah folder home dari user EC2
+          target: "/home/${{ secrets.EC2_USER }}"
+
+      - name: Deploy on EC2
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: 22
+          script: |
+            # Keluar dari skrip jika ada perintah yang gagal
+            set -e
+
+            # Tentukan direktori proyek
+            PROJECT_DIR="/home/${{ secrets.EC2_USER }}/music-discovery-project"
+            
+            # Buat direktori jika belum ada
+            mkdir -p $PROJECT_DIR
+
+            # 1. FIX UTAMA: Ubah kepemilikan folder ke user yang sedang login
+            # Ini akan menyelesaikan semua masalah 'Permission Denied'
+            sudo chown -R ${{ secrets.EC2_USER }}:${{ secrets.EC2_USER }} $PROJECT_DIR
+
+            # Pindah ke direktori proyek
+            cd $PROJECT_DIR
+
+            # 2. FIX LOGIKA: Ekstrak file zip di sini, menimpa file lama
+            unzip -o "/home/${{ secrets.EC2_USER }}/app.zip"
+
+            # Hapus file zip setelah diekstrak
+            rm "/home/${{ secrets.EC2_USER }}/app.zip"
+
+            # Buat file .env dari secrets
+            cat <<EOF> .env
+            JWT_SECRET_KEY='${{ secrets.JWT_SECRET_KEY }}'
+            GOOGLE_APP_PASSWORD='${{ secrets.GOOGLE_APP_PASSWORD }}'
+            GOOGLE_CLIENT_ID='${{ secrets.GOOGLE_CLIENT_ID }}'
+            GOOGLE_SECRET='${{ secrets.GOOGLE_SECRET }}'
+            AWS_ACCESS_KEY_ID='${{ secrets.AWS_ACCESS_KEY_ID }}'
+            AWS_SECRET_ACCESS_KEY='${{ secrets.AWS_SECRET_ACCESS_KEY }}'
+            AWS_BUCKET_NAME='${{ secrets.AWS_BUCKET_NAME }}'
+            AWS_REGION='${{ secrets.AWS_REGION }}'
+            EOF
+            
+            # Install dependensi TANPA sudo, karena user sekarang memiliki folder
+            npm install --production
+
+            # Install/update PM2 secara global (ini butuh sudo)
+            sudo npm install -g pm2
+
+            # 4. FIX PM2: Gunakan 'restart' atau 'start' agar lebih aman
+            # Ini akan me-restart aplikasi jika sudah berjalan, atau memulainya jika belum ada
+            pm2 restart music-discovery-project || pm2 start server.js --name music-discovery-project

@@ -1,0 +1,266 @@
+[{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dcf4"
+  },
+  "id": 1,
+  "title": "BESO",
+  "body": "A passionate reggaeton track that showcases the smooth collaboration between ROSALÍA and Rauw Alejandro. The song blends traditional Spanish influences with modern urban beats.",
+  "artist": "ROSALÍA, Rauw Alejandro",
+  "genre": "Reggaeton",
+  "duration": "3:10",
+  "numberId": 1
+},
+{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dcf5"
+  },
+  "id": 2,
+  "title": "Todo De Ti",
+  "body": "An infectious Latin pop hit that dominated charts worldwide. Rauw Alejandro delivers catchy melodies with modern production that makes it impossible not to dance.",
+  "artist": "Rauw Alejandro",
+  "genre": "Latin Pop",
+  "duration": "3:15",
+  "numberId": 2
+},
+{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dcf6"
+  },
+  "id": 3,
+  "title": "Desesperados",
+  "body": "A vibrant collaboration that brings together reggaeton and pop elements. The chemistry between the artists creates an irresistible summer anthem.",
+  "artist": "Rauw Alejandro, Chencho Corleone",
+  "genre": "Reggaeton",
+  "duration": "3:42",
+  "numberId": 3
+},
+{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dcf7"
+  },
+  "id": 4,
+  "title": "Chantaje (feat. Maluma)",
+  "body": "A seductive reggaeton track that became a global phenomenon. Shakira and Maluma's collaboration showcases perfect Latin rhythm and captivating vocals.",
+  "artist": "Shakira, Maluma",
+  "genre": "Reggaeton",
+  "duration": "3:16",
+  "numberId": 4
+},
+{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dcf8"
+  },
+  "id": 5,
+  "title": "Hips Don't Lie (feat. Wyclef Jean)",
+  "body": "An iconic fusion of Latin pop and hip-hop that became one of the best-selling singles of all time. Shakira's distinctive voice and rhythm are unforgettable.",
+  "artist": "Shakira, Wyclef Jean",
+  "genre": "Latin Pop",
+  "duration": "3:38",
+  "numberId": 5
+},
+{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dcf9"
+  },
+  "id": 6,
+  "title": "Me Gustas Tú",
+  "body": "A charming Latin pop song with catchy lyrics and upbeat rhythm. Manu Chao's distinctive style creates a feel-good anthem that's loved worldwide.",
+  "artist": "Manu Chao",
+  "genre": "Latin Pop",
+  "duration": "3:52",
+  "numberId": 6
+},
+{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dcfa"
+  },
+  "id": 7,
+  "title": "Tubarão Te Amo",
+  "body": "A Brazilian funk hit that took social media by storm. The infectious beat and playful lyrics made it a viral sensation across Latin America.",
+  "artist": "Dj LK da Escócia, Tchakaboy",
+  "genre": "Brazilian Funk",
+  "duration": "2:28",
+  "numberId": 7
+},
+{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dcfb"
+  },
+  "id": 8,
+  "title": "Yo Voy (feat. Daddy Yankee)",
+  "body": "A high-energy reggaeton collaboration that showcases both artists at their best. The track combines classic reggaeton elements with modern production.",
+  "artist": "Zion & Lennox",
+  "genre": "Reggaeton",
+  "duration": "3:50",
+  "numberId": 8
+},
+{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dcfc"
+  },
+  "id": 9,
+  "title": "Gasolina",
+  "body": "The reggaeton anthem that introduced the genre to mainstream audiences worldwide. Daddy Yankee's iconic track remains a dancefloor filler decades later.",
+  "artist": "Daddy Yankee",
+  "genre": "Reggaeton",
+  "duration": "3:15",
+  "numberId": 9
+},
+{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dcfd"
+  },
+  "id": 10,
+  "title": "Del Mar",
+  "body": "A smooth Latin track with oceanic vibes and romantic undertones. The melody captures the essence of summer love by the seaside.",
+  "artist": "FNOC",
+  "genre": "Latin Pop",
+  "duration": "3:28",
+  "numberId": 10
+},
+{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dcfe"
+  },
+  "id": 11,
+  "title": "Callaita",
+  "body": "A reggaeton hit that showcases the new generation of Latin urban music. Bad Bunny and Tainy create a hypnotic rhythm that's both modern and catchy.",
+  "artist": "Bad Bunny, Tainy",
+  "genre": "Latin Trap",
+  "duration": "4:10",
+  "numberId": 11
+},
+{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dcff"
+  },
+  "id": 12,
+  "title": "1, 2, 3 (feat. Jason Derulo)",
+  "body": "A cross-cultural collaboration that blends Latin rhythms with international pop appeal. The track showcases the global reach of Latin music.",
+  "artist": "Sofía Reyes, Jason Derulo",
+  "genre": "Latin Pop",
+  "duration": "3:25",
+  "numberId": 12
+},
+{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dd00"
+  },
+  "id": 13,
+  "title": "Tú",
+  "body": "A minimalist yet powerful track that showcases artistic depth. The simple title belies the complex emotions and beautiful production within.",
+  "artist": "maye",
+  "genre": "Latin Alternative",
+  "duration": "3:20",
+  "numberId": 13
+},
+{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dd01"
+  },
+  "id": 14,
+  "title": "Parado no Bailão",
+  "body": "A Brazilian funk anthem that captures the energy of Rio's street parties. MC L da Vinte and MC Gury deliver infectious rhythms and party vibes.",
+  "artist": "MC L da Vinte, MC Gury",
+  "genre": "Brazilian Funk",
+  "duration": "2:55",
+  "numberId": 14
+},
+{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dd02"
+  },
+  "id": 15,
+  "title": "Dinero",
+  "body": "A collaboration between international stars that celebrates Latin music's global influence. Trinidad Cardona brings smooth vocals to this urban hit.",
+  "artist": "Trinidad Cardona",
+  "genre": "Latin Urban",
+  "duration": "2:40",
+  "numberId": 15
+},
+{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dd03"
+  },
+  "id": 16,
+  "title": "Copines",
+  "body": "A French pop hit with Latin influences that showcases the international appeal of romance-themed music. Aya Nakamura's unique style shines through.",
+  "artist": "Aya Nakamura",
+  "genre": "French Pop",
+  "duration": "2:50",
+  "numberId": 16
+},
+{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dd04"
+  },
+  "id": 17,
+  "title": "N'y pense plus",
+  "body": "A melodic French track with Latin undertones. Tayc's smooth vocals create an atmosphere of romance and sophistication.",
+  "artist": "Tayc",
+  "genre": "French R&B",
+  "duration": "3:32",
+  "numberId": 17
+},
+{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dd05"
+  },
+  "id": 18,
+  "title": "love nwantiti (feat. Dj Yo!)",
+  "body": "An Afrobeats sensation that crossed over to Latin markets. The infectious rhythm and catchy hook made it a global phenomenon.",
+  "artist": "CKay, Dj Yo!, AX'EL",
+  "genre": "Afrobeats",
+  "duration": "3:08",
+  "numberId": 18
+},
+{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dd06"
+  },
+  "id": 19,
+  "title": "Monotonía",
+  "body": "A powerful ballad that showcases vocal prowess and emotional depth. Shakira and Ozuna create a moving piece about love and relationships.",
+  "artist": "Shakira, Ozuna",
+  "genre": "Latin Ballad",
+  "duration": "2:36",
+  "numberId": 19
+},
+{
+  "_id": {
+    "$oid": "686a746e4c553f10e5a4dd07"
+  },
+  "id": 20,
+  "title": "Baila Baila Baila - Remix",
+  "body": "An energetic remix that transforms the original into a dancefloor anthem. The remix brings new life to an already catchy track.",
+  "artist": "Ozuna",
+  "genre": "Reggaeton",
+  "duration": "3:55",
+  "numberId": 20
+},
+{
+  "_id": {
+    "$oid": "686a7678c1e49fc0a968ce1a"
+  },
+  "id": 21,
+  "title": "WTV",
+  "body": "WTV",
+  "artist": "WTV",
+  "genre": "RnB",
+  "duration": "3:43",
+  "numberId": 21,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686a7703c1e49fc0a968ce23"
+  },
+  "id": 22,
+  "title": "Better than this",
+  "body": "I don't believe any of it.",
+  "artist": "HeadLock",
+  "genre": "Rock",
+  "duration": "4:21",
+  "numberId": 22,
+  "__v": 0
+}]

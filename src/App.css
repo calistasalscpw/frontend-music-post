@@ -1,0 +1,235 @@
+body {
+  background-color: #a7e48bb9;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Root styling */
+body {
+  background-color: #a7e48bb9;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Root styling */
+#root {
+  max-width: 1400px; 
+  margin: 0 auto;
+  padding: 2rem;
+  color: #333;
+}
+
+/* Navigation bar style */
+.ant-tabs-ink-bar {
+  background: #388e3c !important; 
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #388e3c !important; 
+}
+
+.ant-tabs-tab:hover .ant-tabs-tab-btn {
+  color: #2e7031 !important; 
+}
+
+/* Card style - Made more flexible */
+.card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1rem;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+/* Post list styling */
+.post-link {
+  text-decoration: none;
+  color: #1e1e2f;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.post-link:hover {
+  color: #68db51cb;
+}
+
+/* Post card styling */
+.post-card {
+  background-color: #e8f5e9;
+  border: 1px solid #b2dfb4c4;
+  transition: box-shadow 0.2s;
+  width: 100%; 
+  box-sizing: border-box;
+}
+.post-card:hover {
+  box-shadow: 0 4px 16px rgba(56, 142, 60, 0.12);
+  border-color: #388e3c;
+}
+
+/* Comments */
+.comment {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.comment-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #222;
+}
+
+.comment-body {
+  color: #555;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Home Page Style */
+.home-container {
+  padding: 0; 
+  text-align: center;
+}
+
+.home-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #030303;
+}
+
+/* Pagination styling */
+.ant-pagination .ant-pagination-item-active {
+  background-color: #388e3c; 
+  border-color: #388e3c;
+}
+
+.ant-pagination .ant-pagination-item-active a {
+  color: #fff; 
+}
+
+.ant-pagination .ant-pagination-item:hover {
+  border-color: #388e3c;
+}
+
+.ant-pagination .ant-pagination-item:hover a {
+  color: #388e3c;
+}
+
+.ant-pagination .ant-pagination-prev:hover .ant-pagination-item-link,
+.ant-pagination .ant-pagination-next:hover .ant-pagination-item-link {
+  color: #388e3c;
+  border-color: #388e3c;
+}
+
+/* == Responsive Media Queries == */
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem; 
+  }
+
+  .home-title {
+    font-size: 28px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  #root {
+    padding: 0; 
+  }
+
+  body {
+    background-color: #fff; 
+  }
+
+  .card {
+    border-radius: 0; 
+    box-shadow: none; 
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+/* Authentication Form Styles */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+}
+
+.auth-form {
+  background: white;
+  padding: 32px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form h2 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #388e3c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.auth-form button:hover {
+  background-color: #2e7d32;
+}
+
+.auth-form .error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.auth-form .switch {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.auth-form .switch span {
+  color: #388e3c;
+  cursor: pointer;
+  font-weight: bold;
+}
